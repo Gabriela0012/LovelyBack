@@ -1,33 +1,58 @@
-<div class="main">
-  <div class=" col-5 ">
-    <div class="">
-      <h2 class="formTitle d-flex justify-content-center">Agregar Productos</h2>
-
-      <form id="productForm">
-    
-        <label>Nombre del producto:</label>
-        <input type="text" class="form-control" name="name" required><br>
-        <label>Precio:</label>
-        <input type="number" class="form-control" name="price" required><br>
-        <label>Imagen:</label>
-        <input type="file" class="form-control" name="thumbnail" required><br>
-        <label>Descripción:</label>
-        <input type="text" class="form-control" name="description" required><br>
-        <label>Código:</label>
-        <input type="text" class="form-control" name="code" required><br>
-        <label>Stock:</label>
-        <input type="number" class="form-control" name="stock" required><br>
-        <input type="submit" class="btn btn-info" value="Agregar producto"> 
+<div class="container-fluid p-0">
+    <header class="header">     
+        <!-- barra de navegación -->
+        <div class="navbar p-2">
+          <div class="col-4">
+            <div class="header__imagen1 m-3">
+              <div class="header__imagen1">
+                <img class="header__imagen1__logo img-fluid" src="img/logo.png" alt="logo">
+              </div> 
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around">
+            <button class="navbar-toggler" type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-expanded="false" aria-label="toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <h5>¡Hola {{user.name}}!</h5>
+              <ul class="navbar-nav p-1 m-2">
+                
+                {{#each routes}}
+                <li class="nav-item active">
+                  <a class="nav-link" href={{this.route}}>{{this.label}}</a>
+                </li>
+                {{/each}}
+               
+              </ul>
+              <input type="submit" class="btn btn-warning" onclick="location.href='logout';" value="Cerrar Sesión">
+            </div>
+          </nav> 
+        </div>        
+    </header>
+    <main>
+        <!-- frase sidebar -->
+        <aside class="sidebar text-center">
+          <div class="sidebar-frase m-3">
+            <h4>SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY</h4>
+          </div>
+        </aside>
+        <div class="row">
+          <!-- productos -->
+          <h2 class="col_12">PRODUCTOS</h2>
+        </div>
+        <section class="store">
+          <div class="container">
+            <div class="items">
+              <div class="row">
+              
+                  {{> Add }}
        
-      </form>
-            
-    </div>    
-        
-  </div>
-    
 
-       
+              </div>
+            </div>
+             
+          </div>
+        </section>      
+    </main>   
 </div>
 
-
-<script src="/js/productsAdd.js"></script>
