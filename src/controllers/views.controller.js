@@ -8,6 +8,7 @@ const home = async (req,res) =>{
   console.log(req.user)
   const routes = ROUTES[req.user.role]
   const products = await productsService.getProducts();
+  console.log(products)
   res.render('home',{
     title: 'Home',
     user: req.user,
