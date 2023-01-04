@@ -10,7 +10,7 @@ const createProduct = async (req, res) => {
   const product = {
     name,
     price,
-    thumbnail: `${req.protocol}://${req.hostname}:${process.env.PORT}/thumbnails/${req.file.filename}`,
+    thumbnail: `${req.protocol}://${req.hostname}/thumbnails/${req.file.filename}`,
     description,
     code,
     stock
