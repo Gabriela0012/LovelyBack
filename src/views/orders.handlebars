@@ -1,0 +1,85 @@
+<div class="container-fluid p-0">
+    <header class="header">     
+        <!-- barra de navegación -->
+        <div class="navbar p-2">
+          <div class="col-4">
+            <div class="header__imagen1 m-3">
+              <div class="header__imagen1">
+                <img class="header__imagen1__logo img-fluid" src="img/logo.png" alt="logo">
+              </div> 
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around">
+            <button class="navbar-toggler" type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-expanded="false" aria-label="toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarNav">
+              
+              <ul class="navbar-nav p-2">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/productAdd">AGREGAR PRODUCTOS</a>
+                </li>
+              </ul>
+              <input type="submit" class="btn btn-warning" onclick="location.href='logout';" value="Cerrar Sesión">
+            </div>
+          </nav> 
+        </div>        
+    </header>
+    <main>
+        <!-- frase sidebar -->
+        <aside class="sidebar text-center">
+          <div class="sidebar-frase m-3">
+            <h4>SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY</h4>
+          </div>
+        </aside>
+        <div class="row">
+          <!-- productos -->
+          <h2 class="col_12" id="orders">ORDENES</h2>
+        </div>
+        <div class="row p-4 d-flex justify-content-around">
+          <div class="row p-4 d-flex justify-content-around">
+            <section class="shopping-cart">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-4">
+                <div class="shopping-cart-header">
+                  <h6>Email</h6>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="shopping-cart-header">
+                  <h6>Id</h6>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="shopping-cart-header">
+                  <h6 class="text-truncate">Items</h6>
+                </div>
+              </div>
+             
+            </div>
+            <!-- start shopping cart items -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+              
+            </div>
+          {{#each orders}}
+            {{> order }}
+          {{/each}}
+
+          </div>
+
+        </div>
+       
+        
+    </main>
+  
+  
+    
+</div>
+
+
+
