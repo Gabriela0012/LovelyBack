@@ -51,15 +51,7 @@ router.post('/', async (req, res) => {
       subject:`hola tu pedido es ${newOrder._id}`,
       html: `
       <div class="row shoppingCartItem">
-        <div class="col-4">
-          <div class="shopping-cart-quantity d-flex justify-content-between align-items-center  h-100 border-bottom pb-2 pt-3">
-            <p class="item-price mb-0 shoppingCartItemPrice">
-            Hola Carlos espero que este bien la entrega igual la voy a seguir arreglando, Buena semana y gracias.
-            </p>
-          </div>
-        </div>
         
-      
         <div class="col-4">
           <div class="shopping-cart-quantity d-flex justify-content-between align-items-center  h-100 border-bottom pb-2 pt-3">
             <p class="item-price mb-0 shoppingCartItemPrice">Los productos del pedido ${JSON.stringify(items)}</p>
