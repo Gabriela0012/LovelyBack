@@ -10,6 +10,10 @@ form.addEventListener('submit', e => {
     body: data
   }).then(result => result.json()).then(json =>{
     console.log(json);
-    form.reset();
+    if(json.status==="success"){
+      window.location.replace('/')
+    }else{
+      window.location.replace('/registerFail')
+    }
   });
 })
