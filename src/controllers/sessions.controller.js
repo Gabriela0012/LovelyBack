@@ -27,7 +27,7 @@ const register =  async (req,res)=>{
     last_name,
     age,
     nickname,
-    avatar:`${req.protocol}://${req.hostname}:${process.env.PORT}/avatares/${req.file.filename}`,
+    avatar:`${req.protocol}://${req.hostname}/avatares/${req.file.filename}`,
     
     password:createHash(password),
     cart:cart._id
