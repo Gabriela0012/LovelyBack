@@ -75,7 +75,7 @@ const detail = async (req,res) =>{
   });
 }
 
-}
+
 const orders = async(req,res) =>{
  
   const orders = await ordersService.getOrders();
