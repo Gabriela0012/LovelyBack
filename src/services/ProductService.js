@@ -19,6 +19,10 @@ export default class ProductService {
   updateProduct = (id, product) =>{
     return this.dao.update(id, product);
   }
+  deleteById = async(_id) => {
+  
+    return this.dao.deleteById(_id)
+  }
 
 
 }

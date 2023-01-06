@@ -1,35 +1,77 @@
-<div class="main">
-  <div class=" col-5 ">
-    <div class="">
-      <h2 class="formTitle d-flex justify-content-center">Registro</h2>
+<div class="container-fluid p-0">
+    <header class="header">     
+        <!-- barra de navegación -->
+        <div class="navbar p-2">
+          <div class="col-4">
+            <div class="header__imagen1 m-3">
+              <div class="header__imagen1">
+                <img class="header__imagen1__logo img-fluid" src="img/logo.png" alt="logo">
+              </div> 
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around">
+            <button class="navbar-toggler" type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-expanded="false" aria-label="toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+          </nav> 
+        </div>        
+    </header>
+    <main>
+        <!-- frase sidebar -->
+        <aside class="sidebar text-center">
+          <div class="sidebar-frase m-3">
+            <h4>SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY</h4>
+          </div>
+        </aside>
+        <div class="main">
+          <div class="col-5 m-5">
+            <div class="">
+              <h2 class="formTitle d-flex justify-content-center">Registro</h2>
 
-      <form id="registerForm">
-        <label>Correo Electrónico</label>
-        <input type="text" class="form-control" name="email" required><br>
-        <label>Nombre:</label>
-        <input type="text" class="form-control" name="name" required><br>
-        <label>Apellido:</label>
-        <input type="text" class="form-control" name="last_name" required><br>
-        <label>Edad:</label>
-        <input type="number" class="form-control" name="age" required><br>
-        <label>Nombre de Usuario:</label>
-        <input type="text" class="form-control" name="nickname" required><br>
-        <label>Contraseña:</label>
-        <input type="password" class="form-control" name="password" required><br>
-        <label>Avatar:</label>
-        <input type="file" class="form-control" name="avatar" required><br>
-        <input type="submit" class="btn btn-info" value="Registrarse"> 
-        <input type="submit" class="btn btn-info" onclick="location.href='/login';" value="Ir a ingresar"> 
+              <form id="registerForm">
+                <label>Correo Electrónico</label>
+                <input type="text" class="form-control" name="email" required><br>
+                <label>Nombre:</label>
+                <input type="text" class="form-control" name="name" required><br>
+                <label>Apellido:</label>
+                <input type="text" class="form-control" name="last_name" required><br>
+                <label>Edad:</label>
+                <input type="number" class="form-control" name="age" required><br>
+                <label>Nombre de Usuario:</label>
+                <input type="text" class="form-control" name="nickname" required><br>
+                <label>Contraseña:</label>
+                <input type="password" class="form-control" name="password" required><br>
+                <label>Avatar:</label>
+                <input type="file" class="form-control" name="avatar" required><br>
+                <input type="submit" class="btn btn-info" value="Registrarse"> 
+                <input type="submit" class="btn btn-info" onclick="location.href='/login';" value="Ir a ingresar"> 
 
-      </form>
-            
-    </div>    
-        
-  </div>
+              </form>
+                    
+            </div>    
+                
+          </div>
     
 
        
+        </div>
+
+        
+      
+   
+        
+    </main>
+  
+  
+    
 </div>
+
+
+
+
+
+
+
 
 
 <script src="/js/register.js"></script>

@@ -24,9 +24,13 @@ const updateProduct= async (req, res) => {
 }
 
 
-
+const deleteById = async (req, res) => {
+  await productsService.deleteById(req.params.id)
+  res.redirect('/homeAdmin')
+}
 
 
 export default {
   createProduct,
+  deleteById
 }

@@ -65,6 +65,15 @@ const profile = async (req,res) =>{
 
     
   });
+}
+const detail = async (req,res) =>{
+  
+  let product= await productsService.getProductById(req.params.id)
+  res.render('detail',{
+    title: 'detail',
+    product
+  });
+}
 
 }
 const orders = async(req,res) =>{
@@ -83,6 +92,7 @@ export default {
   orders,
   home,
   homeAdmin,
+  detail,
   login,
   loginfail,
   logout,

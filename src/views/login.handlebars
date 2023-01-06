@@ -1,23 +1,61 @@
-<div class="main">
-  <div class=" col-5 ">
-    <div class="">
-      <h2 class="formTitle d-flex justify-content-center">ingresar</h2>
+<div class="container-fluid p-0">
+    <header class="header">     
+        <!-- barra de navegación -->
+        <div class="navbar p-2">
+          <div class="col-4">
+            <div class="header__imagen1 m-3">
+              <div class="header__imagen1">
+                <img class="header__imagen1__logo img-fluid" src="img/logo.png" alt="logo">
+              </div> 
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around">
+            <button class="navbar-toggler" type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-expanded="false" aria-label="toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+           
+          </nav> 
+        </div>        
+    </header>
+    <main>
+        <!-- frase sidebar -->
+        <aside class="sidebar text-center">
+          <div class="sidebar-frase m-3">
+            <h4>SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY</h4>
+          </div>
+        </aside>
+          <div class="main">
+            <div class="d-flex-column justify-content-center col-5 m-3">
+              <div class="">
+                <h2 class="formTitle d-flex justify-content-center">ingresar</h2>
 
-      <form id="loginForm">
-        <label>Correo Electrónico</label>
-        <input type="text" class="form-control" name="email" required><br>
-        <label>Contraseña:</label>
-        <input type="password" class="form-control" name="password" required><br>
-        <input type="submit" class="btn btn-info" value="ingresar"> 
-        <input type="submit" class="btn btn-info" onclick="location.href='/register';" value="Registrate"> 
+                <form id="loginForm">
+                  <label>Correo Electrónico</label>
+                  <input type="text" class="form-control" name="email" required><br>
+                  <label>Contraseña:</label>
+                  <input type="password" class="form-control" name="password" required><br>
+                  <input type="submit" class="btn btn-info" value="ingresar"> 
+                  <input type="submit" class="btn btn-info" onclick="location.href='/register';" value="Registrate"> 
 
-      </form>
-            
-    </div>    
+                </form>
+                      
+              </div>    
+                  
+            </div>
+              
+          </div>
         
-  </div>
+        
+    </main>
+  
+  
     
 </div>
+
+
+
+
+
 
 
 <script src="/js/login.js"></script>

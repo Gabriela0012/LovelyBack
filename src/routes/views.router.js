@@ -14,5 +14,5 @@ router.get('/registerfail', viewsController.registerfail)
 router.get('/productAdd',privateValidation,executePolicies(['ADMIN']), viewsController.productAdd)
 router.get('/orders', viewsController.orders)
 router.get('/profile/:id', viewsController.profile)
-
+router.get('/detail/:id', viewsController.detail)
 export default router

@@ -44,23 +44,22 @@
         </aside>
         <div class="row">
           <!-- productos -->
-          <h2 class="col_12">PERFIL</h2>
+          <h2 class="col_12">DETALLE</h2>
         </div>
         <div class="row justify-content-center m-3">
           <div class="col-5 alig-center">
-            <img src="{{user.avatar}}" alt="" style="width:15rem; heigth:15rem" >
+            <img src="{{product.thumbnail}}" alt="" style="width:15rem; heigth:15rem" >
 
           </div>
           <div class="col-5">
-            <h5>NOMBRE: {{user.name}}</h5>
-            <h5>APELLIDOS: {{user.last_name}}</h5>
-            <h5>EMAIL: {{user.email}}</h5>
-            <h5>EDAD: {{user.age}}</h5>
-            <h5>NOMBRE DE USUARIO: {{user.nickname}}</h5>
-         
-
+            <h5>NOMBRE DEL PRODUCTO: {{product.name}}</h5>
+            <h5>PRECIO: {{product.last_name}}</h5>
+            <h5>DESCRIPCION: {{product.description}}</h5>
+            <h5>STOCK: {{product.stock}}</h5>
+            <a href="/">
+             <button class="btn btn-primary">volver</button>
+            </a>
             
-
 
           </div>
           

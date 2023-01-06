@@ -7,7 +7,7 @@ export default class ProductsDao{
   }
 
   getById = (id) =>{
-    return productModel.findOne({_id:id});
+    return productModel.findOne({_id:id}).lean();
   }
 
   save = (product) =>{
@@ -18,5 +18,8 @@ export default class ProductsDao{
     return productModel.findByAndUpdate(id,{$set:product}) 
   }
 
+  deleteById = (id) => {
+    return productModel.findByIdAndDelete({_id:id})
+  }
 
 }
